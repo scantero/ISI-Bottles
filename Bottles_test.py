@@ -30,7 +30,7 @@ Take one down and pass it around, 1 bottle of beer on the wall.
         self.assertEqual(expected, Bottles().verse(2))
 
 
-    @unittest.skip("Not implemented yet")
+    #@unittest.skip("Not implemented yet")
     def test_verse_1(self):
         expected = """
 1 bottle of beer on the wall, 1 bottle of beer.
