@@ -11,7 +11,7 @@ Take one down and pass it around, 98 bottles of beer on the wall.
         self.assertEqual(expected, Bottles().verse(99))
 
 
-    @unittest.skip("Not implemented yet")
+    #@unittest.skip("Not implemented yet")
     def test_another_verse(self):
         unittest.skip("Not implemented yet")
         expected = """
