@@ -1,8 +1,8 @@
 class Bottles:
 
     def verse (self, value):
-        response = "\n" + str(value)
         if value > 1:
+            response = "\n" + str(value)
             response += " bottles of beer on the wall, "
             response += str(value)
             response += " bottles of beer.\nTake one down and pass it around, "
@@ -11,9 +11,10 @@ class Bottles:
                 response += " bottles of beer on the wall.\n"
             elif value == 2:
                 response += " bottle of beer on the wall.\n"
-        else:
-            response += " bottle of beer on the wall, "
-            response += str(value)
-            response += " bottle of beer.\nTake it down and pass it around, "
-            response += "no more bottles of beer on the wall."
+        elif value == 1:
+            response = "\n1 bottle of beer on the wall, 1 bottle of beer.\n"
+            response += "Take it down and pass it around, no more bottles of beer on the wall.\n"
+        else: #value 0
+            response = "\nNo more bottles of beer on the wall, no more bottles of beer.\n"
+            response += "Go to the store and buy some more, 99 bottles of beer on the wall.\n"
         return response
