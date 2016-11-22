@@ -21,11 +21,7 @@ class Bottles:
 
     def verses(self, value1, value2):
         response = ""
-        for i in [value1, value2]:
-            response += "\n" + str(i)
-            response += " bottles of beer on the wall, "
-            response += str(i)
-            response += " bottles of beer.\nTake one down and pass it around, "
-            response += str(i - 1)
-            response += " bottles of beer on the wall.\n"
+        lis = range(value2, value1+1)
+        for i in reversed(lis):
+            response += self.verse(i)
         return response
