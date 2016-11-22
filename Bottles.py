@@ -18,3 +18,14 @@ class Bottles:
             response = "\nNo more bottles of beer on the wall, no more bottles of beer.\n"
             response += "Go to the store and buy some more, 99 bottles of beer on the wall.\n"
         return response
+
+    def verses(self, value1, value2):
+        response = ""
+        for i in [value1, value2]:
+            response += "\n" + str(i)
+            response += " bottles of beer on the wall, "
+            response += str(i)
+            response += " bottles of beer.\nTake one down and pass it around, "
+            response += str(i - 1)
+            response += " bottles of beer on the wall.\n"
+        return response

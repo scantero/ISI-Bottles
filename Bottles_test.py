@@ -48,7 +48,7 @@ Go to the store and buy some more, 99 bottles of beer on the wall.
         self.assertEqual(expected, Bottles().verse(0))
 
 
-    @unittest.skip("Not implemented yet")
+    #@unittest.skip("Not implemented yet")
     def test_a_couple_verses(self):
         expected ="""
 99 bottles of beer on the wall, 99 bottles of beer.
