@@ -25,3 +25,10 @@ class Bottles:
         for i in reversed(lis):
             response += self.verse(i)
         return response
+
+    def song(self):
+        response = ""
+        lis = range(0, 100)
+        for i in reversed(lis):
+            response += self.verse(i)
+        return response
